@@ -1,0 +1,44 @@
+body{
+    position: relative;
+    background-color: rgb(81, 170, 208);
+}
+
+.cursor{
+    position: absolute
+    ;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999
+}
+button
+{
+    cursor: pointer;
+}
+.note{
+position: relative;
+background-color: rgba(158, 40, 197, 0.493);
+}
+.aps{
+
+    position: absolute;
+       width: 100%;
+   inset: 0;
+background: rgba(255, 255, 255, 0.034);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.aps.active{
+    display: none;
+}
+.card.active{
+    background-color: rgb(88, 84, 84);
+    color: white;
+}
